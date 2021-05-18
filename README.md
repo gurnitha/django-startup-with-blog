@@ -1,7 +1,7 @@
 ## Building a Startup with Blog
 https://github.com/gurnitha/django-startup-with-blog
 
-1. Django project and apps created and installed
+#### 1. Django project and apps created and installed
 
 	(venv3921) ing| tree -L 2
 	.
@@ -31,3 +31,21 @@ https://github.com/gurnitha/django-startup-with-blog
 	    ├── models.py
 	    ├── tests.py
 	    └── views.py
+
+#### 2. Adding html templates
+
+	modified:   README.md
+	modified:   _config/settings.py
+	modified:   _config/urls.py
+	new file:   blog/urls.py
+	modified:   blog/views.py
+	new file:   db.sqlite3
+	new file:   organizer/urls.py
+	modified:   organizer/views.py
+	new file:   templates/base.html
+	new file:   templates/blog/post_detail.html
+	new file:   templates/blog/post_list.html
+	new file:   templates/organizer/startup_detail.html
+	new file:   templates/organizer/startup_list.html
+	new file:   templates/organizer/tag_detail.html
+	new file:   templates/organizer/tag_list.html
