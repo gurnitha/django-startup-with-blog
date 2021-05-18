@@ -49,3 +49,16 @@ https://github.com/gurnitha/django-startup-with-blog
 	new file:   templates/organizer/startup_list.html
 	new file:   templates/organizer/tag_detail.html
 	new file:   templates/organizer/tag_list.html
+
+#### 3. Template inheritance
+
+	modified:   README.md
+	modified:   templates/base.html
+	modified:   templates/blog/post_detail.html
+	modified:   templates/blog/post_list.html
+	modified:   templates/organizer/startup_detail.html
+	modified:   templates/organizer/startup_list.html
+	modified:   templates/organizer/tag_detail.html
+	modified:   templates/organizer/tag_list.html
+	new file:   templates/shared/footer.html
+	new file:   templates/shared/navbar.html
