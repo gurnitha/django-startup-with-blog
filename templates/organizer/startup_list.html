@@ -13,22 +13,16 @@ Startups
 			
   <h2>Startup List</h2>
   <ul>
+      {% for startup in startups  %}
       <li>
         <a href="{% url 'organizer_startup_detail' %}">
           
-          Django for Beginners</a>
+          {{startup.name}}</a>
       </li>
-    
-      <li>
-        <a href="{% url 'organizer_startup_detail' %}">
-          
-          Flask for Beginners</a>
-      </li>
-    
-      <li>
-        <a href="{% url 'organizer_startup_detail' %}">
-          Python for Beginners</a>
-      </li>
+      {% empty %}
+      <p>There is no startup availabes.</p>      
+      {% endfor %}
+
   </ul>
 
 </div>

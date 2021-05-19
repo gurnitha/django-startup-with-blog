@@ -1,10 +1,15 @@
 from django.shortcuts import render
+from organizer.models import Startup 
 
 # Create your views here.
 
 # Startup List
 def startup_list(request):
-	return render(request,'organizer/startup_list.html')
+	startups = Startup.objects.all()
+	context = {
+		'startups':startups
+	}
+	return render(request,'organizer/startup_list.html', context)
 
 
 # Startup Detail

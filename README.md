@@ -386,8 +386,11 @@ https://github.com/gurnitha/django-startup-with-blog
 	modified:   templates/blog/post_detail.html
 	modified:   templates/blog/post_list.html
 
+#### 14. Rendering list of startups to startup page
 
-
+	modified:   README.md
+	modified:   organizer/views.py
+	modified:   templates/organizer/startup_list.html
 
 
 
