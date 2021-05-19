@@ -195,4 +195,47 @@ https://github.com/gurnitha/django-startup-with-blog
 	modified:   db.sqlite3
 	modified:   organizer/admin.py
 
-	
+#### 7. Modify models	
+
+	modified:   README.md
+	modified:   blog/models.py
+	modified:   organizer/models.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

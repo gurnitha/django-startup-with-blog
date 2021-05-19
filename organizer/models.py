@@ -16,7 +16,8 @@ class Tag(models.Model):
 
 	name = models.CharField(
 			max_length=31, 
-			unique=True)
+			unique=True,
+			help_text='Add your tag name here.')
 	slug = models.SlugField(
 			unique=True,
 			help_text='A label for URL config.')
@@ -40,17 +41,21 @@ class Startup(models.Model):
 
 	name = models.CharField(
 			max_length=31,
-			db_index=True)
+			db_index=True,
+			help_text='Add your startup name here.')
 	slug = models.SlugField(
 			max_length=31,
 			unique=True,
 			help_text='A label for URL config.')
-	description = models.TextField()
+	description = models.TextField(
+			help_text='Add the body of startup here.')
 	founded_date = models.DateField(
 			'date founded')
 	contact = models.EmailField(
-			max_length=225)
-	website = models.URLField()
+			max_length=225,
+			help_text='Add your email here.')
+	website = models.URLField(
+			help_text='Add your website domain/url here.')
 	# ManyToMany Rel: 
 	## A Startup may have one or many tags
 	## A tag or many tags may belongs to a startup
@@ -72,20 +77,24 @@ Type of Rel : OneToMany with Startup
 class NewsLink(models.Model):
 
 	title = models.CharField(
-			max_length=63)
+			max_length=63,
+			help_text='Add the title here.')
 	pub_date = models.DateField(
 			'date published')
 	link = models.URLField(
-			max_length=225)
+			max_length=225,
+			help_text='Add/paste the link here.')
 	# OneToMany Rel: 
 	## A NewsLink belong to a Startup
 	## A Startup may have one or many NewsLink
 	startup = models.ForeignKey(
 			Startup,
-			on_delete=models.CASCADE)
+			on_delete=models.CASCADE,
+			help_text='Click the v sign.')
 
 	class Meta:
-		verbose_name  = 'article links'
+		verbose_name  = 'article link'
+		verbose_name_plural  = 'article links'
 		ordering 	  = ['-pub_date']
 		get_latest_by = 'pub_date'
 

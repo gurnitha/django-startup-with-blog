@@ -18,15 +18,18 @@ Type of Rel : OneToMany with Tags,
 class Post(models.Model):
 
 	title 	= models.CharField(
-			max_length=63)
+			max_length=63,
+			help_text='Add your post title here.')
 	slug 	= models.SlugField(
 			max_length=63,
-			help_text='A label for URL config',
+			help_text='A label for URL config.',
 			unique_for_month='pub_date')
-	text 	= models.TextField()
+	text 	= models.TextField(
+			help_text='Add your post body here.')
 	pub_date= models.DateField(
 			'date published',
-			auto_now_add=True)
+			auto_now_add=True,
+			help_text='It will not be seen in admin.')
 	# ManyToMany Rel:
 	## A post may have one or many tags
 	## A tag or many tags may belongs to one post
