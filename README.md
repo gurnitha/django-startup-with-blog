@@ -188,3 +188,11 @@ https://github.com/gurnitha/django-startup-with-blog
 	modified:   db.sqlite3
 	new file:   organizer/migrations/0001_initial.py
 
+#### 6. Install models
+
+	modified:   README.md
+	modified:   blog/admin.py
+	modified:   db.sqlite3
+	modified:   organizer/admin.py
+
+	
