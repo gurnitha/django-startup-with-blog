@@ -365,8 +365,11 @@ https://github.com/gurnitha/django-startup-with-blog
 	COMMIT;
 
 
+#### 11. Redirect: from http://127.0.0.1:8000/ to http://127.0.0.1:8000/blog/
 
-
+	modified:   README.md
+	modified:   _config/urls.py
+	new file:   _config/views.py
 
 
 
