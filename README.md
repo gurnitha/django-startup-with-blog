@@ -62,3 +62,11 @@ https://github.com/gurnitha/django-startup-with-blog
 	modified:   templates/organizer/tag_list.html
 	new file:   templates/shared/footer.html
 	new file:   templates/shared/navbar.html
+
+
+#### 4. Models
+
+	modified:   README.md
+	modified:   blog/models.py
+	modified:   organizer/models.py
+
