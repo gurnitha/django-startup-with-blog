@@ -202,11 +202,13 @@ https://github.com/gurnitha/django-startup-with-blog
 	modified:   organizer/models.py
 
 
+#### 8. Run migrations
 
-
-
-
-
+	modified:   README.md
+	new file:   blog/migrations/0002_auto_20210519_0342.py
+	modified:   db.sqlite3
+	new file:   organizer/migrations/0002_auto_20210519_0342.py
+	
 
 
 
