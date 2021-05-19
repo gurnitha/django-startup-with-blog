@@ -377,8 +377,14 @@ https://github.com/gurnitha/django-startup-with-blog
 	modified:   blog/views.py
 	modified:   templates/blog/post_list.html
 
+#### 13. Rendering detail of each posts
 
-
+	modified:   README.md
+	modified:   blog/models.py
+	modified:   blog/urls.py
+	modified:   blog/views.py
+	modified:   templates/blog/post_detail.html
+	modified:   templates/blog/post_list.html
 
 
 
