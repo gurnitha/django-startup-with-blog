@@ -92,11 +92,11 @@ class NewsLink(models.Model):
 			on_delete=models.CASCADE,
 			help_text='Click the v sign.')
 
-	class Meta:
-		verbose_name  = 'article link'
-		verbose_name_plural  = 'article links'
-		ordering 	  = ['-pub_date']
-		get_latest_by = 'pub_date'
+	# class Meta:
+	# 	verbose_name  = 'article link'
+	# 	verbose_name_plural  = 'article links'
+	# 	ordering 	  = ['-pub_date']
+	# 	get_latest_by = 'pub_date'
 
 	'''
 	Title: Micro Chip
