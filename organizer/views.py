@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from organizer.models import Startup 
 
 # Create your views here.
@@ -13,8 +13,18 @@ def startup_list(request):
 
 
 # Startup Detail
-def startup_detail(request):
-	return render(request,'organizer/startup_detail.html')
+def startup_detail(request, slug):
+	startup = get_object_or_404(
+			Startup,
+			slug__iexact=slug 
+			)
+	context = {
+		'startup':startup
+	}
+	return render(
+			request,
+			'organizer/startup_detail.html',
+			context)
 
 
 # Tag list 

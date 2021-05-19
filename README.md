@@ -392,6 +392,7 @@ https://github.com/gurnitha/django-startup-with-blog
 	modified:   organizer/views.py
 	modified:   templates/organizer/startup_list.html
 
+#### 15. Rendering detail of each startups
 
 
 

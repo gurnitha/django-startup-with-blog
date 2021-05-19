@@ -1,5 +1,6 @@
 # organizer/models.py
-from django.db import models
+from django.db import models 
+from django.urls import reverse
 
 # Create your models here.
 
@@ -63,6 +64,15 @@ class Startup(models.Model):
 
 	def __str__(self):
 		return self.name 
+
+	# Get Absolute Url
+	def get_absolute_url(self):
+		return reverse(
+			'organizer_startup_detail',
+			kwargs={
+				'slug': self.slug
+			})
+
 
 
 # ORGANIZER MODELS/TABLE: NewsLink
