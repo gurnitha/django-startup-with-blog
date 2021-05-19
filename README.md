@@ -371,6 +371,12 @@ https://github.com/gurnitha/django-startup-with-blog
 	modified:   _config/urls.py
 	new file:   _config/views.py
 
+#### 12. Rendering list of posts to home page
+
+	modified:   README.md
+	modified:   blog/views.py
+	modified:   templates/blog/post_list.html
+
 
 
 

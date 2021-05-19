@@ -8,69 +8,34 @@ Post List
 
 {% block content %}
   
+  {% for post in post_list  %}
+    
   <article>
     <header>
       <h2>
-        <a href="{% url 'blog_post_detail' %}">Flask Essentials</a>
+        <a href="{% url 'blog_post_detail' %}">
+          {{post.title|title}}
+        </a>
       </h2>
       <p>
         Written on:
-        <time datetime="2021-05-16">
-          Sunday, May 16, 2021
+        <time 
+          {# datetime="2021-05-16" #}
+          datetime="{{post.pub_date|date:"Y-m-d"}}">
+          {# Sunday, May 16, 2021 #}
+          {{post.pub_date|date:"l, Fj, Y"}}
         </time>
       </p>
     </header>
-    <p>Flask Essentials Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna …</p>
+    <p>{{post.text|truncatewords:20}}</p>
     <p>
       <a href="">
         Read more&hellip;</a>
     </p>
   </article>
+  {% empty %}
+    <p><em>No Blog Posts Available</em></p>
+  {% endfor %}
 
-  <article>
-    <header>
-      <h2>
-        
-        
-        <a href="{% url 'blog_post_detail' %}"> 
-            
-            How To Start Learning Django?</a>
-      </h2>
-      <p>
-        Written on:
-        <time datetime="2021-05-16">
-          Sunday, May 16, 2021
-        </time>
-      </p>
-    </header>
-    <p>How to start learning Django? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore …</p>
-    <p>
-      <a href="">
-        Read more&hellip;</a>
-    </p>
-  </article>
-
-  <article>
-    <header>
-      <h2>
-        
-        
-        <a href="{% url 'blog_post_detail' %}"> 
-            
-            Learn Python For Beginners</a>
-      </h2>
-      <p>
-        Written on:
-        <time datetime="2021-05-16">
-          Sunday, May 16, 2021
-        </time>
-      </p>
-    </header>
-    <p>Learn Python for Beginners Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et …</p>
-    <p>
-      <a href="">
-        Read more&hellip;</a>
-    </p>
-  </article>
 {% endblock content %}
 
